@@ -1,0 +1,16 @@
+:root{
+    --skin-color:slateblue;
+    --bg-color-left:#acacae;
+    --bg-color-right:#dce0e2;
+    --bg-color-box:#ffffff9d;
+    --text-color:black;
+    --text-color-reverse:white;
+    --clrh:green;
+    --clrm:chocolate;
+    --clrs:purple;
+    --hover-color:darkred;
+    --green:rgb(2, 117, 2);
+    --orange:rgb(205, 75, 5);
+    --violet:rgb(120, 11, 215);
+    --progressbar:#9d93de;
+}
