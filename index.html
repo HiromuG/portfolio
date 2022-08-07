@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-switcher.css">
+    <link rel="stylesheet" href="skin-color-white.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--  -->
+    <link rel="stylesheet" href="skin-color-black.css" class="alternate-style" title="skin-color-black" disabled>
+    <link rel="stylesheet" href="skin-color-white.css" class="alternate-style" title="skin-color-white" >
+</head>
+<body>
+    <div class="main-container">
+        <div class="aside">
+            <div class="nav-toggler hidden">
+                <i class="fa fa-bars"></i>
+            </div>
+            <ul class="nav">
+                <li><a href="#Home" class="active"><i class="fa fa-home"></i>首頁</a></li>
+                <li id="mySelf"><a href="#About"><i class="fa fa-user"></i> 自我介紹</a></li>
+                <li><a href="#Experience"><i class="fa fa-list"></i> 經歷</a></li>
+                <li><a href="#Portfolio"><i class="fa fa-briefcase"></i> 練習作品</a></li>
+                <li><a href="#Contact"><i class="fa fa-comments"></i>聯絡方式</a></li>
+            </ul>
+            <div class="clock">
+                <div class="ap">
+                    <div id="ampm">AM</div>
+                </div>
+                <div class="clockbox">
+                    <div id="hours">00</div>
+                </div>
+                <span class="colon">：</span>
+                <div class="clockbox">
+                    <div id="minutes">00</div>
+                </div>
+                <span class="colon">：</span>
+                <div class="clockbox">
+                    <div id="seconds">00</div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <section class="home section active" id="Home">
+                <div class="container">
+                    <div class="row">
+                        <div class="home-info">
+                            <h3 class="hello">您好！我的名字是 <span class="name">郭 子弘</span></h3>
+                            <a href="https://docs.google.com/document/d/1DjNRflavgRbr3yRNYauhceAqjzK7V9vM/edit?usp=sharing&ouid=104495467670702044476&rtpof=true&sd=true" target="blank" >
+                            </a>                       
+                        </div>
+                        <div class="home-img">
+                            <img src="image/pImg.JPG" id="pImg">
+                        </div>
+                    </div>
+                    <div class="row">
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="about section" id="About">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="personal-info">
+                            <div class="row">
+                                <h4 class="shoukai">
+                                    <p>
+                                        您好！我是郭子弘，畢業於文藻外語大學日本語文系。
+                                    </p>
+                                    <p>
+                                        雖然大學並不是相關科系出身，但我曾在職訓局接受過快一年的課程。當時的畢業專題為叫車系統，我們所使用的IDE為Android Studio與Visual Studio，在4人一組的小組中我負責的部分是手機與網頁的介面，以及資料庫的建構。          
+                                        在這段過程中，因為能在設計畫面的過程中帶來成就感，所以漸漸地對前端產生興趣。因為後期採用遠距上課的原因，我也在分組專題的過程，深切了解到如何和組員有效率的溝通，以及分工合作的重要性。
+                                    </p>
+                                    <p>
+                                    結訓後，每天還是有持續的吸收新的知識。現在也積極加強CSS和前端，對繪圖工具也有一些興趣，那方面也想學習。
+                                    </p>  
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="row">
+                                <div class="skill-item">
+                                    <h5>HTML/CSS</h5>
+                                    <div class="progress">
+                                        <div class="progress-in HTMLCSSProgress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>ASP NET MVC (C#)</h5>
+                                    <div class="progress">
+                                        <div class="progress-in CSharpProgress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>Javascript</h5>
+                                    <div class="progress">
+                                        <div class="progress-in JSProgress"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>SQL SSMS</h5>
+                                    <div class="progress">
+                                        <div class="progress-in SQLProgress"></div>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <p>Birthday : <span id="Birthday">1994/05/24</span></p>
+                                    <p>City : <span id="City">屏東縣</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <section class="pr section" id="Experience">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>My Experience</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="pr-item">
+                            <div class="pr-item-inner inner1">
+                                <div class="icon">
+                                    <i class="fa fa-clipboard-user"></i>
+                                </div>
+                                <h4>學歷</h4>
+                                <div class="row">
+                                    <div class="education">
+                                        <div class="timeline-box">
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2013 - 2017
+                                                    </h3>
+                                                    <h3 class="timeline-title">文藻外語大學</h3>
+                                                    <p class="timeline-text">日文系畢業</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2010 - 2013
+                                                    </h3>
+                                                    <h3 class="timeline-title">高雄高工</h3>
+                                                    <p class="timeline-text">資訊科畢業</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pr-item">
+                            <div class="pr-item-inner inner2">
+                                <div class="icon">
+                                    <i class="fa fa-laptop"></i>
+                                </div>
+                                <h4>經歷</h4>
+                                <div class="experience">
+                                    <div class="row">
+                                        <div class="timeline-box">
+                                            <div class="timeline">
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2018/3 - 2020/11 
+                                                    </h3>
+                                                    <h3 class="timeline-title">日本 暖香園旅館</h3>
+                                                    <p class="timeline-text">事務職</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio section" id="Portfolio">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>My Portfolio</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-heading">
+                            <h2>我的練習作品 : </h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="portfolio-item">
+                            <a href="https://youtu.be/LoiXnC9XuuA" target="_blank">
+                                <div class="portfolio-item-inner">
+                                    <div class="portfolio-img">
+                                        <img src="image/img-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>EShopping Test</h3>
+                                    <h4>HTML/Bootstrap/JQuery/SSMS</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="https://clone-b3e9a.web.app/" target="_blank">
+                                <div class="portfolio-item-inner">
+                                    <div class="portfolio-img">
+                                        <img src="image/img-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Youtube-clone</h3>
+                                    <h4>React/CSS + firebase</h4>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="portfolio-item">
+                            <a href="https://nioh-clone.web.app/" target="_blank">
+                                <div class="portfolio-item-inner">
+                                    <div class="portfolio-img">
+                                        <img src="image/img-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="portfolio-text">
+                                    <h3>Nioh2-clone</h3>
+                                    <h4>React/CSS + firebase</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact section" id="Contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title">
+                            <h2>Contact Me</h2>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">感謝您百忙中撥空看到這裡。</h3>
+                    <div class="row">
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa-brands fa-line" id="line"></i></div>
+                            <h4>Line : </h4>
+                            <p>asas34520</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa-brands fa-google" id="google"></i></div>
+                            <h4>E-mail : </h4>
+                            <p>asas34520@gmail.com</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <div class="icon"><i class="fa-brands fa-whatsapp" id="whatsapp"></i></div>
+                            <h4>Phone : </h4>
+                            <p>0973-307-129</p>
+                        </div>
+                    </div>
+                    <h3 class="contact-title">請多多指教。</h3>
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fa fa-gear fa-spin"></i>
+            <div class="black-white">
+                <i class="fa fa-sun" id="SunMoon"></i>
+            </div>
+        </div>
+        <h4>Theme Colors : </h4>
+        <div class="colors">
+            <span class="bg-color-black" onclick="setActiveStyle('skin-color-black')"></span>
+            <i class="kuro" onclick="setActiveStyle('skin-color-black')">黑</i>
+            |
+            <span class="bg-color-white" onclick="setActiveStyle('skin-color-white')"></span>
+            <i class="shiro" onclick="setActiveStyle('skin-color-white')">白</i>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</ht>
