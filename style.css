@@ -126,7 +126,7 @@ ul{
 /* HTML Right Side */
 
 .section{
-    background:var(--bg-color-right);
+    background: var(--bg-color-right);
     min-height: 100vh;
     display: block;
     z-index: 0;
@@ -509,9 +509,9 @@ ul{
     position: relative;
     transition: 1s;
 }
-    .portfolio .portfolio-item:last-child{
+    /* .portfolio .portfolio-item:last-child{
         margin-bottom: 0;
-    }
+    } */
 .portfolio .portfolio-item-inner{
     border: 2px solid var(--text-color);
     border-radius: 10px;
