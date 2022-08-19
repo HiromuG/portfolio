@@ -1,16 +1,14 @@
 :root{
-    --skin-color:slateblue;
-    --bg-color-left:#acacae;
-    --bg-color-right:#e4e8eb;
-    --bg-color-box:#ffffff9d;
+    --skin-color:#3478ff;
+    --bg-color-left: linear-gradient(to left,#e4e8eb,#b2b2b2);
+    --bg-color-right: linear-gradient(to right,#e4e8eb,#b2b2b2);
     --text-color:black;
     --text-color-reverse:white;
     --clrh:green;
     --clrm:chocolate;
     --clrs:purple;
-    --hover-color:darkred;
     --green:rgb(2, 117, 2);
     --orange:rgb(205, 75, 5);
     --violet:rgb(120, 11, 215);
-    --progressbar:#9d93de;
+    --progressbar:#004de7;
 }

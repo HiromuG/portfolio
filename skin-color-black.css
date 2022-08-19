@@ -1,14 +1,12 @@
 :root{
     --skin-color:wheat;
-    --bg-color-left:#4e4e4e;
-    --bg-color-right:#292929;
-    --bg-color-box:#777777;
+    --bg-color-left: linear-gradient(to left,#5b5c5e,#292929);
+    --bg-color-right: linear-gradient(to right,#5b5c5e,#292929);
     --text-color:white;
     --text-color-reverse:black;
     --clrh:lightgreen;
     --clrm:gold;
     --clrs:lightpink;
-    --hover-color:lightskyblue;
     --green:greenyellow;
     --orange:orange;
     --violet:violet;
