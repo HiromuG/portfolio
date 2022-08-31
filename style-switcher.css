@@ -6,7 +6,7 @@
     width: 180px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
-    background: var(--bg-color-box);
+    background: var(--bg-color-switcher);
     color:var(--skin-color);
     z-index:999;
     transition: all 0.5s ease;
@@ -22,7 +22,7 @@
     text-align: center;
     font-size: 1.5rem;
     right:100%;
-    background: var(--bg-color-box);
+    background: var(--bg-color-switcher);
     color:var(--skin-color);
     margin-right: 20px;
     transition: all 0.5s ease;
