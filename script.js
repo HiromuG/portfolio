@@ -101,7 +101,7 @@ let allSection = document.querySelectorAll("section");
             }
             this.classList.add("active");
             showSection(this);
-            if(window.innerWidth<899){
+            if(window.innerWidth<1200){
                 asideTogglerBtn();
             }
         })
