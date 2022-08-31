@@ -1,7 +1,8 @@
 :root{
-    --skin-color:#3478ff;
-    --bg-color-left: linear-gradient(to left,#e4e8eb,#b2b2b2);
-    --bg-color-right: linear-gradient(to right,#e4e8eb,#b2b2b2);
+    --skin-color:#204a9f;
+    --bg-color-left: linear-gradient(to left,#e4e8eb,#908f8f);
+    --bg-color-right: linear-gradient(to right,#e4e8eb,#908f8f);
+    --bg-color-switcher:#908f8f;
     --text-color:black;
     --text-color-reverse:white;
     --clrh:green;
@@ -10,5 +11,5 @@
     --green:rgb(2, 117, 2);
     --orange:rgb(205, 75, 5);
     --violet:rgb(120, 11, 215);
-    --progressbar:#004de7;
+    --progressbar:#009ee7;
 }

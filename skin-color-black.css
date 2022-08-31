@@ -2,6 +2,7 @@
     --skin-color:wheat;
     --bg-color-left: linear-gradient(to left,#5b5c5e,#292929);
     --bg-color-right: linear-gradient(to right,#5b5c5e,#292929);
+    --bg-color-switcher:#292929;
     --text-color:white;
     --text-color-reverse:black;
     --clrh:lightgreen;
