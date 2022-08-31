@@ -31,17 +31,17 @@ setInterval(() => {
 // progress-bar
 
 let about = document.getElementById("mySelf");
-let htmlcssProgress = document.querySelector(".HTMLCSSProgress");
-let csharpProgress = document.querySelector(".CSharpProgress");
-let jsProgress = document.querySelector(".JSProgress");
-let sqlProgress = document.querySelector(".SQLProgress");
+let responsibleProgress = document.querySelector(".responsibleProgress");
+let creativeProgress = document.querySelector(".creativeProgress");
+let selfEnhancementProgress = document.querySelector(".selfEnhancementProgress");
+let thinkingProgress = document.querySelector(".thinkingProgress");
 let Birthday = document.getElementById("Birthday");
 let City = document.getElementById("City");
 about.addEventListener("click",function(){
-    htmlcssProgress.style.width = "80%";
-    csharpProgress.style.width = "65%";
-    jsProgress.style.width = "70%";
-    sqlProgress.style.width = "60%";
+    responsibleProgress.style.width = "80%";
+    creativeProgress.style.width = "65%";
+    selfEnhancementProgress.style.width = "75%";
+    thinkingProgress.style.width = "60%";
     Birthday.style.animation = "typing 3s steps(25)";
     City.style.animation = "typing 3s steps(25)";
 })
