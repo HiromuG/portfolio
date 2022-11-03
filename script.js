@@ -41,7 +41,6 @@ about.addEventListener("click",function(){
     responsibleProgress.style.width = "80%";
     creativeProgress.style.width = "65%";
     selfEnhancementProgress.style.width = "75%";
-    thinkingProgress.style.width = "60%";
     Birthday.style.animation = "typing 3s steps(25)";
     City.style.animation = "typing 3s steps(25)";
 })

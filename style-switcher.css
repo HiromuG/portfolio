@@ -3,7 +3,7 @@
     right: 5px;
     top: 50px;
     padding: 15px;
-    width: 180px;
+    width: 150px;
     border: 1px solid var(--text-color);
     border-radius: 5px;
     background: var(--bg-color-switcher);
@@ -60,7 +60,7 @@
     }
 .style-switcher .kuro,
 .style-switcher .shiro{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     position: relative;
     top: 3px;
     cursor: pointer;

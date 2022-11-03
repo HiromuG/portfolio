@@ -184,6 +184,12 @@ ul{
             font-weight: 900;
             color: var(--skin-color);
         }
+            h3.hello span::before{
+                content: 'カク　 シ  コウ';
+                position: absolute;
+                font-size: 1.1rem;
+                top: 0;
+            }
     .home-info a{
         margin-left: 100%;
     }
