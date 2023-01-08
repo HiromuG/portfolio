@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Portfolio</title>
+    <title>郭子弘</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-switcher.css">
     <link rel="stylesheet" href="skin-color-white.css">
@@ -11,19 +11,21 @@
     <!--  -->
     <link rel="stylesheet" href="skin-color-black.css" class="alternate-style" title="skin-color-black" disabled>
     <link rel="stylesheet" href="skin-color-white.css" class="alternate-style" title="skin-color-white" >
+    <script type="module" src="scroll.js"></script>
 </head>
 <body>
     <div class="main-container">
+        <div class="scroll-tracker"></div>
         <div class="aside">
             <div class="nav-toggler hidden">
                 <i class="fa fa-bars"></i>
             </div>
             <ul class="nav">
-                <li><a href="#Home" class="active"><i class="fa fa-home"></i>ホーム</a></li>
-                <li id="mySelf"><a href="#About"><i class="fa fa-user"></i> 自己紹介</a></li>
+                <li><a href="#Home" class="active"><i class="fa fa-home"></i>TOP</a></li>
+                <!-- <li id="mySelf"><a href="#About"><i class="fa fa-user"></i> 自我介紹</a></li> -->
                 <li><a href="#Experience"><i class="fa fa-list"></i> 經歷</a></li>
                 <li><a href="#Portfolio"><i class="fa fa-briefcase"></i> 練習作品</a></li>
-                <li><a href="#Contact"><i class="fa fa-comments"></i>連絡先</a></li>
+                <li><a href="#Contact"><i class="fa fa-comments"></i>聯絡方式</a></li>
             </ul>
             <div class="clock">
                 <div class="ap">
@@ -46,68 +48,16 @@
             <section class="home section active" id="Home">
                 <div class="container">
                     <div class="row">
-                        <div class="home-info">
-                            <h3 class="hello">はじめまして。私は <span class="name">郭 子弘</span>と申します。</h3>
+                        <div class="home-info home-text-fade-in">
+                            <h3 class="hello">您好！我的名字是 <span class="name">郭 子弘</span></h3>
                         </div>
-                        <div class="home-img">
+                        <div class="home-img home-img-fade-in">
                             <img src="https://raw.githubusercontent.com/HiromuG/portfolio/master/image/pImg.jpg" id="pImg">
                         </div>
                     </div>
                     <div class="row">
                         
                     </div>
-                </div>
-            </section>
-            <section class="about section" id="About">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="personal-info">
-                            <div class="row">
-                                <h4 class="shoukai">
-                                    <p>
-                                        大学の時、ゲームの字幕翻訳をしたいと思い、Premiere Proを自分で学んだことがあります。
-                                    </p>
-                                    <p>
-                                        Webデザインに興味を持ち、一年前からアルバイトしながらプログラミングを勉強しています。
-                                    </p>
-                                    <p>
-                                        PhotoShopもすこし勉強していたことがあります。
-                                    </p>  
-                            </div>
-                        </div>
-                        <div class="skills">
-                            <div class="row">
-                                <div class="skill-item">
-                                    <h5>責任感</h5>
-                                    <div class="progress">
-                                        <div class="progress-in responsibleProgress"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h5>創造力</h5>
-                                    <div class="progress">
-                                        <div class="progress-in creativeProgress"></div>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <h5>学ぶ姿勢</h5>
-                                    <div class="progress">
-                                        <div class="progress-in selfEnhancementProgress"></div>
-                                    </div>
-                                </div>
-                                <div class="info-item">
-                                    <p>Birthday : <span id="Birthday">1994/05/24</span></p>
-                                    <p>City : <span id="City">台湾屏東縣</span></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
                 </div>
             </section>
             <section class="pr section" id="Experience">
@@ -117,7 +67,7 @@
                             <h2>My Experience</h2>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" id="ExperienceArea">
                         <div class="pr-item">
                             <div class="pr-item-inner inner1">
                                 <div class="icon">
@@ -131,18 +81,26 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2013 - 2017
+                                                        <i class="fa fa-calendar"></i> 2010 - 2013
                                                     </h3>
-                                                    <h3 class="timeline-title">文藻外国語大學</h3>
-                                                    <p class="timeline-text">日本語学科　卒業</p>
+                                                    <h3 class="timeline-title">高雄高工</h3>
+                                                    <p class="timeline-text">資訊科畢業</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2010 - 2013
+                                                        <i class="fa fa-calendar"></i> 2013 - 2017
                                                     </h3>
-                                                    <h3 class="timeline-title">高雄工業高等学校</h3>
-                                                    <p class="timeline-text">情報学科　卒業</p>
+                                                    <h3 class="timeline-title">文藻外語大學</h3>
+                                                    <p class="timeline-text">日文系畢業</p>
+                                                </div>
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h3 class="timeline-date">
+                                                        <i class="fa fa-calendar"></i> 2021
+                                                    </h3>
+                                                    <h3 class="timeline-title">勞動部勞動力發展署 高屏澎東分署</h3>
+                                                    <p class="timeline-text">行動商務系統設計與開發班 900小時 結訓</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -163,18 +121,10 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2019/3 - 2019/9 
+                                                        <i class="fa fa-calendar"></i> 2018 - 2020 
                                                     </h3>
-                                                    <h3 class="timeline-title">日本 ホテル暖香園</h3>
-                                                    <p class="timeline-text">ワーキングホリデー</p>
-                                                </div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2020/1 - 2021/1 
-                                                    </h3>
-                                                    <h3 class="timeline-title">台湾　信功公司</h3>
-                                                    <p class="timeline-text">業務アシスタント</p>
+                                                    <h3 class="timeline-title">日本 暖香園旅館</h3>
+                                                    <p class="timeline-text">綜合職</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -186,28 +136,28 @@
                 </div>
             </section>
             <section class="portfolio section" id="Portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title">
-                            <h2>My Portfolio</h2>
-                        </div>
+                <div class="row">
+                    <div class="section-title">
+                        <h2>My Portfolio</h2>
                     </div>
-                    <div class="row">
-                        <div class="portfolio-heading">
-                            <h2>練習作品 : </h2>
-                        </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-heading">
+                        <h2>我的練習作品 : </h2>
                     </div>
-                    <div class="row">
+                </div>
+                <div class="container" id="horizon">
+                    <div class="row horizontal-item">
                         <div class="portfolio-item">
-                            <a href="https://hiromug.github.io/PokemonBattleType/" target="_blank">
+                            <a href="https://hiromug.github.io/simplepokedex/" target="_blank">
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
-                                        <img src="image/img-7.jpg" alt="">
+                                        <img src="image/img-7.png" alt="">
                                     </div>
                                 </div>
                                 <div class="portfolio-text">
-                                    <h3>Pokemon-battle-type</h3>
-                                    <h4>React</h4>
+                                    <h3>Simple Pokedex</h3>
+                                    <h4>React/github-page</h4>
                                 </div>
                             </a>
                         </div>
@@ -220,7 +170,7 @@
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Xenoblade Portal Site</h3>
-                                    <h4>CSS animation effect(React/github-page)</h4>
+                                    <h4>React/github-page</h4>
                                 </div>
                             </a>
                         </div>
@@ -233,7 +183,7 @@
                                 </div>
                                 <div class="portfolio-text">
                                     <h3>Simple-Weather-App</h3>
-                                    <h4>fetch api(React/github-page)</h4>
+                                    <h4>React/github-page</h4>
                                 </div>
                             </a>
                         </div>
@@ -250,28 +200,28 @@
                                 </div>
                             </a>
                         </div>
-                        <!-- <div class="portfolio-item">
-                            <a href="https://nioh-clone.web.app/" target="_blank">
+                        <div class="portfolio-item">
+                            <a href="https://clone-b3e9a.web.app/" target="_blank">
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="image/img-3.png" alt="">
                                     </div>
                                 </div>
                                 <div class="portfolio-text">
-                                    <h3>Nioh2-clone</h3>
+                                    <h3>Youtube-clone</h3>
                                     <h4>React/firebase</h4>
                                 </div>
                             </a>
-                        </div> -->
+                        </div>
                         <div class="portfolio-item">
-                            <a href="https://clone-b3e9a.web.app/" target="_blank">
+                            <a href="https://nioh-clone.web.app/" target="_blank">
                                 <div class="portfolio-item-inner">
                                     <div class="portfolio-img">
                                         <img src="image/img-2.png" alt="">
                                     </div>
                                 </div>
                                 <div class="portfolio-text">
-                                    <h3>Youtube-clone</h3>
+                                    <h3>Nioh2-clone</h3>
                                     <h4>React/firebase</h4>
                                 </div>
                             </a>
@@ -299,25 +249,25 @@
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                    <h3 class="contact-title">ポートフォリオをご覧いただきありがとうございます。</h3>
-                    <div class="row">
-                        <div class="contact-info-item">
+                    <h3 class="contact-title">感謝您百忙中撥空看到這裡。</h3>
+                    <div class="row contact-fade-in">
+                        <div class="contact-info-item animated">
                             <div class="icon"><i class="fa-brands fa-line" id="line"></i></div>
                             <h4>Line : </h4>
                             <p>asas34520</p>
                         </div>
-                        <div class="contact-info-item">
+                        <div class="contact-info-item animated">
                             <div class="icon"><i class="fa-brands fa-google" id="google"></i></div>
                             <h4>E-mail : </h4>
                             <p>asas34520@gmail.com</p>
                         </div>
-                        <div class="contact-info-item">
+                        <div class="contact-info-item animated">
                             <div class="icon"><i class="fa-brands fa-whatsapp" id="whatsapp"></i></div>
                             <h4>Phone : </h4>
-                            <p>(886)973-307-129</p>
+                            <p>0973-307-129</p>
                         </div>
                     </div>
-                    <h3 class="contact-title">どうぞよろしくお願いいたします。</h3>
+                    <h3 class="contact-title">請多多指教。</h3>
                 </div>
             </section>
         </div>
@@ -332,10 +282,10 @@
         <h4>Theme Colors : </h4>
         <div class="colors">
             <span class="bg-color-black" onclick="setActiveStyle('skin-color-black')"></span>
-            <i class="kuro" onclick="setActiveStyle('skin-color-black')"> dark</i>
-            　
+            <i class="kuro" onclick="setActiveStyle('skin-color-black')">黑</i>
+            |
             <span class="bg-color-white" onclick="setActiveStyle('skin-color-white')"></span>
-            <i class="shiro" onclick="setActiveStyle('skin-color-white')"> light</i>
+            <i class="shiro" onclick="setActiveStyle('skin-color-white')">白</i>
         </div>
     </div>
     <script src="script.js"></script>
