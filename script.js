@@ -30,20 +30,21 @@ setInterval(() => {
 
 // progress-bar
 
-let about = document.getElementById("mySelf");
-let responsibleProgress = document.querySelector(".responsibleProgress");
-let creativeProgress = document.querySelector(".creativeProgress");
-let selfEnhancementProgress = document.querySelector(".selfEnhancementProgress");
-let thinkingProgress = document.querySelector(".thinkingProgress");
-let Birthday = document.getElementById("Birthday");
-let City = document.getElementById("City");
-about.addEventListener("click",function(){
-    responsibleProgress.style.width = "80%";
-    creativeProgress.style.width = "65%";
-    selfEnhancementProgress.style.width = "75%";
-    Birthday.style.animation = "typing 3s steps(25)";
-    City.style.animation = "typing 3s steps(25)";
-})
+// let about = document.getElementById("mySelf");
+// let responsibleProgress = document.querySelector(".responsibleProgress");
+// let creativeProgress = document.querySelector(".creativeProgress");
+// let selfEnhancementProgress = document.querySelector(".selfEnhancementProgress");
+// let thinkingProgress = document.querySelector(".thinkingProgress");
+// let Birthday = document.getElementById("Birthday");
+// let City = document.getElementById("City");
+// about.addEventListener("click",function(){
+//     responsibleProgress.style.width = "80%";
+//     creativeProgress.style.width = "65%";
+//     selfEnhancementProgress.style.width = "75%";
+//     thinkingProgress.style.width = "60%";
+//     Birthday.style.animation = "typing 3s steps(25)";
+//     City.style.animation = "typing 3s steps(25)";
+// })
 
 // toggle-open
 
@@ -83,35 +84,35 @@ function setActiveStyle(color){
 
 // aside
 
-let nav = document.querySelector(".nav");
-let navList = nav.querySelectorAll("li");
-let allSection = document.querySelectorAll("section");
-    for(let i=0;i<navList.length;i++){
-        let active = navList[i].querySelector("a");
-        active.addEventListener("click",function(){
-            for(let i=0;i<navList.length;i++){
-                allSection[i].classList.remove("back-section")
-            }
-            for(let j=0;j<navList.length;j++){
-                if(navList[j].querySelector("a").classList.contains("active")){
-                    allSection[j].classList.add("back-section");
-                }
-                navList[j].querySelector("a").classList.remove("active");
-            }
-            this.classList.add("active");
-            showSection(this);
-            if(window.innerWidth<1200){
-                asideTogglerBtn();
-            }
-        })
-    }
-function showSection(e){
-    for(let i=0;i<allSection.length;i++){
-        allSection[i].classList.remove("active");
-    }
-    let href = e.getAttribute("href").split("#")[1];
-    document.querySelector("#"+href).classList.add("active");
-}
+// let nav = document.querySelector(".nav");
+// let navList = nav.querySelectorAll("li");
+// let allSection = document.querySelectorAll("section");
+//     for(let i=0;i<navList.length;i++){
+//         let active = navList[i].querySelector("a");
+//         active.addEventListener("click",function(){
+//             for(let i=0;i<navList.length;i++){
+//                 allSection[i].classList.remove("back-section")
+//             }
+//             for(let j=0;j<navList.length;j++){
+//                 if(navList[j].querySelector("a").classList.contains("active")){
+//                     allSection[j].classList.add("back-section");
+//                 }
+//                 navList[j].querySelector("a").classList.remove("active");
+//             }
+//             this.classList.add("active");
+//             showSection(this);
+//             if(window.innerWidth<1200){
+//                 asideTogglerBtn();
+//             }
+//         })
+//     }
+// function showSection(e){
+//     for(let i=0;i<allSection.length;i++){
+//         allSection[i].classList.remove("active");
+//     }
+//     let href = e.getAttribute("href").split("#")[1];
+//     document.querySelector("#"+href).classList.add("active");
+// }
 
 // toggler
 
@@ -122,7 +123,31 @@ navToggler.addEventListener("click",function(){
 })
 function asideTogglerBtn(){
     aside.classList.toggle("open");
-    for(let i=0;i<allSection.length;i++){
-        allSection[i].classList.toggle("open");
+    // for(let i=0;i<allSection.length;i++){
+    //     allSection[i].classList.toggle("open");
+    // }
+}
+
+//horizontal-scroll
+let portfolio = document.getElementById('horizon');
+let portfolioImg = document.querySelectorAll('.portfolio-img')
+/////////////////////////
+function scrollHorizontally(e) {
+    e = window.event;
+    let delta = e.wheelDelta;
+    portfolio.scrollLeft -= delta;
+    let maxScrollLeft = portfolio.scrollWidth - portfolio.clientWidth;
+    if(portfolio.scrollLeft>0 && portfolio.scrollLeft<maxScrollLeft-1){
+        e.preventDefault();
     }
 }
+/////////////////////////
+window.addEventListener('scroll',function(){
+    // let scrollY = window.scrollY;
+    // console.log(scrollY);
+    for(let item of portfolioImg){
+        item.onmouseover = function(){
+            portfolio.addEventListener('wheel',scrollHorizontally)
+        }
+    }
+})
